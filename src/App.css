@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  background-color: #ED7855;
 }
 
 .ladoDerecho {
+  padding-top: 5px;
   display: flex;
   margin-right: 20px;
 }
@@ -29,4 +31,10 @@
 
 .logo {
   padding-left: 10px;
+}
+
+body {
+  height: auto;
+  width: auto;
+  background-image: url(./assets/back.jpeg);
 }
