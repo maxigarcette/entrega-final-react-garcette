@@ -21,6 +21,8 @@
   padding-right: 5px;
   text-decoration: none;
   color: black;
+  border-right: 2px solid black;
+  margin-right: 5px;
 }
 
 .saludo {
@@ -37,4 +39,5 @@ body {
   height: auto;
   width: auto;
   background-image: url(./assets/back.jpeg);
+  background-size: cover;
 }
