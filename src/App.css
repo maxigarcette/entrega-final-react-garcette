@@ -36,8 +36,6 @@
 }
 
 body {
-  height: auto;
-  width: auto;
   background-image: url(./assets/back.jpeg);
   background-size: cover;
 }
