@@ -5,6 +5,10 @@
   background-color: #ED7855;
 }
 
+.header h2 {
+  text-decoration: overline;
+}
+
 .ladoDerecho {
   padding-top: 5px;
   display: flex;
