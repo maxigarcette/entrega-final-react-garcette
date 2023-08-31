@@ -1,0 +1,12 @@
+[
+    {"id":1,"product":"MacBook Pro","productId":"electronics","description":"Great value for money","img":"https://loremflickr.com/320/240/dog","price":500.44,"stock":17},
+    {"id":2,"product":"Canon EOS","productId":"electronics","description":"Easy to use","img":"https://loremflickr.com/320/240/dog","price":95.29,"stock":54},
+    {"id":3,"product":"MacBook Air","productId":"electronics","description":"Versatile usage","img":"https://loremflickr.com/320/240/dog","price":494.56,"stock":87},
+    {"id":4,"product":"Chevrolet Onix","productId":"cars","description":"1.0 petrol turbo","img":"https://loremflickr.com/320/240/horse","price":775.65,"stock":5},
+    {"id":5,"product":"Ford Focus","productId":"cars","description":"2.0 petrol turbo","img":"https://loremflickr.com/320/240/horse","price":472.09,"stock":13},
+    {"id":6,"product":"Renault Sandero","productId":"cars","description":"1.5 petrol","img":"https://loremflickr.com/320/240/horse","price":867.36,"stock":22},
+    {"id":7,"product":"Levi's Jeans","productId":"clothes","description":"High-quality product","img":"https://loremflickr.com/320/240","price":241.5,"stock":82},
+    {"id":8,"product":"Levi's T-Shirt","productId":"clothes","description":"Versatile usage","img":"https://loremflickr.com/320/240","price":292.66,"stock":30},
+    {"id":9,"product":"Vans Shorts","productId":"clothes","description":"Durable and long-lasting","img":"https://loremflickr.com/320/240","price":227.87,"stock":11},
+    {"id":10,"product":"DC Hoodie","productId":"clothes","description":"Stylish design","img":"https://loremflickr.com/320/240","price":807.56,"stock":58}
+]
