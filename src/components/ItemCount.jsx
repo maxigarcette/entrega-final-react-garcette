@@ -18,7 +18,7 @@ export const ItemCount = ({item}) => {
     }
 
     const onAdd = () => {
-        alert(count)
+        alert(count);
     }
 
     return (
