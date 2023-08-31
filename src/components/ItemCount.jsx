@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-const stock = 4;
-
-export const ItemCount = () => {
+export const ItemCount = ({item}) => {
     const [count, setCount] = useState(1);
 
     const minusProduct = () => {
@@ -12,8 +10,10 @@ export const ItemCount = () => {
     }
 
     const plusProduct = () =>{
-        if (stock > count) {
+        if (item.stock > count) {
             setCount(prev => prev + 1);
+        } else {
+            alert("No contamos con mas stock disponible")
         }
     }
 

@@ -6,6 +6,6 @@ export const ItemDetail = ({item}) => (
         <h1>{item.product}</h1>
         <h6>{item.description}</h6>
         <div>${item.price}</div> 
-        <ItemCount/> 
+        <ItemCount item = {item}/> 
     </div>
 )
