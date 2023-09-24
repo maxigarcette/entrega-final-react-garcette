@@ -11,6 +11,12 @@ export const Item = ({item}) => (
             <Card.Text>
                 {item.description}
             </Card.Text>
+            <Card.Text>
+                Stock disponible: {item.stock}
+            </Card.Text>
+            <Card.Text>
+                ${item.price}
+            </Card.Text>
             <Link to={`/item/${item.id}`}><Button className='buttonCard' variant="primary">Ver mas</Button></Link>
         </Card.Body>
     </Card>

@@ -8,10 +8,29 @@
 .header h2 {
   text-decoration: overline;
   color: black;
+  margin-right: 20px;
 }
 
 .link{
   text-decoration: none;
+}
+
+.ladoIzquierdo {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.ladoIzquierdo nav a{
+  padding-left: 5px;
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+}
+
+.dropdown-menu.show {
+  display: block;
+  background-color: #ED7855;
 }
 
 .ladoDerecho {
@@ -31,7 +50,6 @@
   padding-right: 5px;
   text-decoration: none;
   color: black;
-  border-right: 2px solid black;
   margin-right: 5px;
 }
 
@@ -70,6 +88,7 @@ body {
   margin-right: 10rem;
   border-radius: 8px;
   box-shadow: 0 130px 52px rgba(0, 0, 0, 0.01), 0 8px 18px rgba(0, 0, 0, 0.1);
+  padding-bottom: 30px;
 }
 
 .cardComplete{
@@ -100,4 +119,27 @@ background-color: #ED7855;
   margin-right: auto;
   margin-top: 100px;
   background-color:  #ED7855;
+}
+
+.cartTitle {
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+Table {
+  margin-left: 10px;
+}
+
+Form {
+  margin-top: 50px;
+  padding-left: 10px;
+  width: 500px;
 }
