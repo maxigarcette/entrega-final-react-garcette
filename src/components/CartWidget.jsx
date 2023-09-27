@@ -5,11 +5,9 @@ import { CartContext } from "../contexts/CartContext"
 import { useContext} from "react"
 
 export const CartWidget = () => {
-    const { totalWidget, items } = useContext (CartContext)
+    const { totalWidget } = useContext (CartContext)
 
     return(
-        items.length === 0 ? <div></div>
-        :
         <Link to='cart'>
             <img src={cart} alt="imgCart"/><span>{totalWidget}</span>
         </Link>

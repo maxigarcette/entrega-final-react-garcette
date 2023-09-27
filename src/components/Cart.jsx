@@ -11,6 +11,7 @@ export const Cart = () => {
         name: "",
         phone: "",
         email: "",
+        emailTwo: "",
     })
 
     const { clear, items, removeItem} = useContext(CartContext)
@@ -39,18 +40,27 @@ export const Cart = () => {
         const db = getFirestore();
         const orderCollection = collection(db, "orders");
 
-        addDoc(orderCollection, order).then(({ id }) => {
-            console.log(id)
-            if (id) {
-                setFormValues({
-                    name: "",
-                    phone: "",
-                    email: "",
+        if(formValues.name === "" || formValues.phone === "" || formValues.email === "" || formValues.emailTwo === ""){
+            alert("Please fill out all the information to proceed")
+        } else {
+            if (formValues.email === formValues.emailTwo){
+                addDoc(orderCollection, order).then(({ id }) => {
+                    console.log(id)
+                    if (id) {
+                        setFormValues({
+                            name: "",
+                            phone: "",
+                            email: "",
+                            emailTwo: "",
+                        })
+                        clear()
+                        alert("Successful order number" + id)
+                    }
                 })
-                clear()
-                alert("Successful order number" + id)
+            } else {
+                alert("Email addresses don't match")
             }
-        })
+        }
     }
 
     return (
@@ -95,7 +105,6 @@ export const Cart = () => {
                         type="text" 
                         name="name" 
                         placeholder="Full name"
-                        required
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -106,22 +115,31 @@ export const Cart = () => {
                         type="text"
                         name="phone" 
                         placeholder="Phone number"
-                        required
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control 
+                        required
                         onChange={handleChange}  
                         value={formValues.email} 
                         type="email"
                         name="email" 
                         placeholder="Enter email address" 
-                        required
                     />
                     <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
                     </Form.Text>
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control 
+                        onChange={handleChange}  
+                        value={formValues.emailTwo} 
+                        type="email"
+                        name="emailTwo" 
+                        placeholder="Re-enter email address" 
+                    />
                 </Form.Group>
             </Form>
             <button onClick={sendOrder}>Submit</button>
